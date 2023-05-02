@@ -13,7 +13,7 @@ loginForm.addEventListener("submit", (e) => {
   const passwordValue = loginForm.elements.password.value;
 
   if (emailValue === "" || passwordValue === "") {
-    alert("Будь ласка, заповніть усі поля!");
+    return alert("Будь ласка, заповніть усі поля!");
   }
 
   const dataTransfer = {
